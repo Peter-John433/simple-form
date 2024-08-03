@@ -59,12 +59,24 @@
     methods:{
         handleSubmit(){
             if(this.password.length < 5 ){
+                this.$swal.fire({
+                    title: 'Error!',
+                    text: this.passwordP = 'password must be atleast 5',
+                    icon: 'error',
+                    confirmButtonText: 'rewrite password',
+                    confirmButtonColor: 'red'
+                })
                 this.passwordP = 'invalid password'
-                alert('password must be atleast 5')
-                console.log(this.passwordP)
             }else{
-                this.passwordP = 'successful'
-                alert('form submitted successful')
+                this.$swal.fire({
+                    title: 'Application successful',
+                    text: this.passwordP = 'form submitted successful',
+                    icon: 'success',
+                    confirmButtonText: 'confirmed',
+                    confirmButtonColor: 'green'
+                })
+
+                this.passwordP = 'valid password'
             }
 
             this.name = ''
