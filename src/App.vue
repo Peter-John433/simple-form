@@ -32,7 +32,7 @@
 
   .app-two{
     width: 450px;
-    height: 400px;
+    /* height: 400px; */
     background-color: white;
     margin: 50px 0;
     border-radius: 8px;

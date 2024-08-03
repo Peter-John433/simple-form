@@ -33,6 +33,9 @@
             <div class="btn">
                 <button>submit</button>
             </div>
+            <div>
+                {{ nameP }}
+            </div>
         </form>
     </div>
 </template>
@@ -49,6 +52,7 @@
             checkMe: false,
             emailP: '',
             passwordP: '',
+            nameP: ''
         }
     },
    
@@ -118,7 +122,7 @@
         font-size: 18px;
         text-transform: capitalize;
         margin-top: 20px;
-        border: none;
+        border: 1px solid #f1f1f1;
         box-shadow: 0px 0px 1px gold;
         border-radius: 5px;
     }
