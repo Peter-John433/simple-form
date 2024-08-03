@@ -28,7 +28,7 @@
             </label>
             <div class="check">
                 <input type="checkbox" v-model="checkMe" required>
-                accept sipa-K terms and conditions ?
+                accept Sipa-K terms and conditions ?
             </div>
             <div class="btn">
                 <button>submit</button>
@@ -61,7 +61,7 @@
             if(this.password.length < 5 ){
                 this.$swal.fire({
                     title: 'Error!',
-                    text: this.passwordP = 'password must be atleast 5',
+                    text: this.passwordP = 'password must be atleast 10',
                     icon: 'error',
                     confirmButtonText: 'rewrite password',
                     confirmButtonColor: 'red'
